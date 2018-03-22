@@ -40,7 +40,7 @@ apis:
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-owner-repo-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-owner-repo-get.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
