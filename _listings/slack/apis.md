@@ -39,7 +39,7 @@ apis:
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/slack/team-integrationlogs-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/slack/team-info-get.md
 x-common:
 - type: x-application-gallery
   url: https://slack.com/apps
