@@ -25,7 +25,7 @@ apis:
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-following-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-hooks-get.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
