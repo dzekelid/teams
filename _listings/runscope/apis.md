@@ -30,7 +30,7 @@ apis:
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/runscope/teams-teamid-integrations-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/runscope/teams-teamid-people-get.md
 x-common:
 - type: x-base-url
   url: https://api.runscope.com
