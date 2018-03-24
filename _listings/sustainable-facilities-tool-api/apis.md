@@ -10,8 +10,8 @@ tags:
 - Stack Network
 - Federal Government   GSA
 - Environment
-created: "2018-03-22"
-modified: "2018-03-22"
+created: "2018-03-24"
+modified: "2018-03-24"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/sustainable-facilities-tool-api/apis.yaml
 specificationVersion: "0.14"
 apis:
@@ -24,7 +24,7 @@ apis:
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/sustainable-facilities-tool-api/building-systems-parameter-integrative-teams-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/sustainable-facilities-tool-api/building-systems-integrative-teams-get.md
 x-common:
 - type: x-developer
   url: https://sftool.gov/developers
