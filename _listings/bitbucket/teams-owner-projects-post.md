@@ -1,10 +1,62 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Add Teams Owner Projects
+  description: |-
+    Creates a new project.
+
+    Note that the avatar has to be embedded as either a data-url
+    or a URL to an external image as shown in the examples below:
+
+    ```
+    $ body=$(cat << EOF
+    {
+        "name": "Mars Project",
+        "key": "MARS",
+        "description": "Software for colonizing mars.",
+        "links": {
+            "avatar": {
+                "href": "data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/..."
+            }
+        },
+        "is_private": false
+    }
+    EOF
+    )
+    $ curl -H "Content-Type: application/json" \
+           -X POST \
+           -d "$body" \
+           https://api.bitbucket.org/2.0/teams/teams-in-space/projects/ | jq .
+    {
+      // Serialized project document
+    }
+    ```
+
+    or even:
+
+    ```
+    $ body=$(cat << EOF
+    {
+        "name": "Mars Project",
+        "key": "MARS",
+        "description": "Software for colonizing mars.",
+        "links": {
+            "avatar": {
+                "href": "http://i.imgur.com/72tRx4w.gif"
+            }
+        },
+        "is_private": false
+    }
+    EOF
+    )
+    $ curl -H "Content-Type: application/json" \
+           -X POST \
+           -d "$body" \
+           https://api.bitbucket.org/2.0/teams/teams-in-space/projects/ | jq .
+    {
+      // Serialized project document
+    }
+    ```
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
