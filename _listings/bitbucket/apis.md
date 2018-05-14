@@ -26,17 +26,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-repositories-parameters.md
-- name: Bitbucket Parameters Teams Username Members
-  description: Parameters teams username members
+- name: Bitbucket Get Teams Username Pipelines Config Variables
+  description: Get teams username pipelines config variables
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-members-parameters.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-pipelines-config-variables-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-members-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-pipelines-config-variables-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
