@@ -31,17 +31,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/runscope/teams-teamid-people-get.md
-- name: Runscope Get Teams Agents
-  description: Team agents list
+- name: Runscope Get Teams Integrations
+  description: Team integrations list
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/runscope-logo.png
   humanURL: https://www.runscope.com/
   baseURL: https://api.runscope.com//
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/runscope/teams-teamid-agents-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/runscope/teams-teamid-integrations-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/runscope/teams-teamid-agents-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/runscope/teams-teamid-integrations-get-postman.md
 x-common:
 - type: x-base-url
   url: https://api.runscope.com
