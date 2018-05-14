@@ -41,17 +41,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/user-teams-get.md
-- name: Github Get Teams Team Repos
-  description: List team repos
+- name: Github Put Teams Team Repos Org Repo
+  description: In order to add a repository to a team, the authenticated user must
+    be an owner of the org that the team is associated with. Also, the repository
+    must be owned by the organization, or a direct fork of a repository owned by the
+    organization.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-org-repo-put.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-org-repo-put-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
