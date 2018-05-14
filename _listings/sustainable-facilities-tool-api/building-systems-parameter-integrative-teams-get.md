@@ -1,10 +1,8 @@
 ---
 swagger: "2.0"
 info:
-  title: Sustainable Facilities Tool API
-  description: Our core API allows developers to interact with the Sustainable Facilities
-    Tool programmatically. It's designed for public use and to be easily integrated
-    into other applications.
+  title: Sustainable Facilities Tool API Building System Integrative Team
+  description: Returns a building system integrative team by parameter.
   termsOfService: https://sftool.gov/developer/terms-of-use
   version: 1.0.0
 host: api.data.gov
