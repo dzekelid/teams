@@ -26,17 +26,37 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-repositories-parameters.md
-- name: Bitbucket Parameters Teams Owner Projects Project Key
-  description: Parameters teams owner projects project key
+- name: Bitbucket Update Teams Owner Projects Project Key
+  description: |-
+    Since this endpoint can be used to both update and to create a
+    project, the request body depends on the intent.
+
+    ### Creation
+
+    See the POST documentation for the project collection for an
+    example of the request body.
+
+    Note: The `key` should not be specified in the body of request
+    (since it is already present in the URL). The `name` is required,
+    everything else is optional.
+
+    ### Update
+
+    See the POST documentation for the project collection for an
+    example of the request body.
+
+    Note: The key is not required in the body (since it is already in
+    the URL). The key may be specified in the body, if the intent is
+    to change the key itself. In such a scenario, the location of the
+    project is changed and is returned in the `Location` header of the
+    response.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-owner-projects-project-key-parameters.md
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-owner-projects-project-key-parameters-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-owner-projects-project-key-put.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
