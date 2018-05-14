@@ -1,10 +1,16 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Update Teams Username Hooks U
+  description: |-
+    Updates the specified webhook subscription.
+
+    The following properties can be mutated:
+
+    * `description`
+    * `url`
+    * `active`
+    * `events`
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
