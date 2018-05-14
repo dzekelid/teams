@@ -40,17 +40,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/slack/team-profile-get-get.md
-- name: Slack Get Team
-  description: Gets information about the current team.
+- name: Slack Get Team Profile
+  description: Retrieve a team's profile.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/slack-logo.png
   humanURL: https://slack.com
   baseURL: https://slack.com//api
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/slack/team-info-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/slack/team-profile-get-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/slack/team-info-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/slack/team-profile-get-get-postman.md
 x-common:
 - type: x-application-gallery
   url: https://slack.com/apps
