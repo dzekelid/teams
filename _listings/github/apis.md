@@ -41,20 +41,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/user-teams-get.md
-- name: Github Put Teams Team Repos Org Repo
-  description: In order to add a repository to a team, the authenticated user must
-    be an owner of the org that the team is associated with. Also, the repository
-    must be owned by the organization, or a direct fork of a repository owned by the
-    organization.
+- name: Github Delete Teams Team Repos Owner Repo
+  description: 'In order to remove a repository from a team, the authenticated user
+    must be an owner of the org that the team is associated with. NOTE: This does
+    not delete the repository, it just removes it from the team.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-org-repo-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-owner-repo-delete.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-org-repo-put-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-owner-repo-delete-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
