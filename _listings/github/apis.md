@@ -41,20 +41,24 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/user-teams-get.md
-- name: Github Get Teams Team Members
+- name: Github Delete Teams Team Members Username
   description: |-
-    List team members.
-    In order to list members in a team, the authenticated user must be a member
-    of the team.
+    The "Remove team member" API is deprecated and is scheduled for removal in the next major version of the API. We recommend using the Remove team membership API instead. It allows you to remove both active and pending memberships.
+
+    Remove team member.
+    In order to remove a user from a team, the authenticated user must have 'admin'
+    permissions to the team or be an owner of the org that the team is associated
+    with.
+    NOTE This does not delete the user, it just remove them from the team.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-username-delete.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-username-delete-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
