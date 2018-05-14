@@ -41,17 +41,19 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/user-teams-get.md
-- name: Github Get Teams Team Repos Owner Repo
-  description: Check if a team manages a repository
+- name: Github Get User Teams
+  description: List all of the teams across all of the organizations to which the
+    authenticated user belongs. This method requires user or repo scope when authenticating
+    via OAuth.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-owner-repo-get.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/user-teams-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-repos-owner-repo-get-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/user-teams-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
