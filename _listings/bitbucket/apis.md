@@ -26,25 +26,25 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-repositories-parameters.md
-- name: Bitbucket Update Teams Username Hooks U
+- name: Bitbucket Get Teams Username Members
   description: |-
-    Updates the specified webhook subscription.
+    All members of a team.
 
-    The following properties can be mutated:
+    Returns all members of the specified team. Any member of any of the
+    team's groups is considered a member of the team. This includes users
+    in groups that may not actually have access to any of the team's
+    repositories.
 
-    * `description`
-    * `url`
-    * `active`
-    * `events`
+    Note that members using the "private profile" feature are not included.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-hooks-uid-put.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-members-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-hooks-uid-put-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-members-get-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
