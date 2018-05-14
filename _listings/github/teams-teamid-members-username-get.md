@@ -1,12 +1,13 @@
 ---
 swagger: "2.0"
 info:
-  title: GitHub
-  description: GitHub is the best place to share code with friends, co-workers, classmates,
-    and complete strangers. Over 24 million people use GitHub to build amazing things
-    together across 67 million repositories. With the collaborative features of GitHub.com
-    and GitHub Business, it has never been easier for individuals and teams to write
-    faster, better code.
+  title: Github Get Teams Team Members Username
+  description: |-
+    The "Get team member" API is deprecated and is scheduled for removal in the next major version of the API. We recommend using the Get team membership API instead. It allows you to get both active and pending memberships.
+
+    Get team member.
+    In order to get if a user is a member of a team, the authenticated user mus
+    be a member of the team.
   termsOfService: https://help.github.com/articles/github-terms-of-service/#b-api-terms
   version: 1.0.0
 host: api.github.com
@@ -28,23 +29,15 @@ paths:
       - in: header
         name: Accept
         description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
       - in: path
         name: teamId
         description: Id of team
       - in: path
         name: username
         description: Name of a member
-      - in: header
-        name: X-GitHub-Media-Type
-        description: You can check the current version of media type in responses
-      - in: header
-        name: X-GitHub-Request-Id
-      - in: header
-        name: X-RateLimit-Limit
-      - in: header
-        name: X-RateLimit-Remaining
-      - in: header
-        name: X-RateLimit-Reset
       responses:
         200:
           description: OK
