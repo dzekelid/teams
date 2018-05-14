@@ -41,17 +41,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/user-teams-get.md
-- name: Github Add Orgs Org Teams
-  description: |-
-    Create team.
-    In order to create a team, the authenticated user must be an owner of organization.
+- name: Github Get Repos Owner Repo Teams
+  description: Get list of teams
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/orgs-org-teams-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/repos-owner-repo-teams-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/repos-owner-repo-teams-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
