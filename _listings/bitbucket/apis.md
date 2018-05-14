@@ -26,69 +26,17 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-username-repositories-parameters.md
-- name: Bitbucket Add Teams Owner Projects
-  description: |-
-    Creates a new project.
-
-    Note that the avatar has to be embedded as either a data-url
-    or a URL to an external image as shown in the examples below:
-
-    ```
-    $ body=$(cat << EOF
-    {
-        "name": "Mars Project",
-        "key": "MARS",
-        "description": "Software for colonizing mars.",
-        "links": {
-            "avatar": {
-                "href": "data:image/gif;base64,R0lGODlhEAAQAMQAAORHHOVSKudfOulrSOp3WOyDZu6QdvCchPGolfO0o/..."
-            }
-        },
-        "is_private": false
-    }
-    EOF
-    )
-    $ curl -H "Content-Type: application/json" \
-           -X POST \
-           -d "$body" \
-           https://api.bitbucket.org/2.0/teams/teams-in-space/projects/ | jq .
-    {
-      // Serialized project document
-    }
-    ```
-
-    or even:
-
-    ```
-    $ body=$(cat << EOF
-    {
-        "name": "Mars Project",
-        "key": "MARS",
-        "description": "Software for colonizing mars.",
-        "links": {
-            "avatar": {
-                "href": "http://i.imgur.com/72tRx4w.gif"
-            }
-        },
-        "is_private": false
-    }
-    EOF
-    )
-    $ curl -H "Content-Type: application/json" \
-           -X POST \
-           -d "$body" \
-           https://api.bitbucket.org/2.0/teams/teams-in-space/projects/ | jq .
-    {
-      // Serialized project document
-    }
-    ```
+- name: Bitbucket Delete Teams Owner Projects Project Key
+  description: Delete teams owner projects project key
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/bitbucket-logo.png
   humanURL: https://bitbucket.org/
   baseURL: https://api.bitbucket.org//2.0
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-owner-projects-post.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-owner-projects-project-key-delete.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/bitbucket/teams-owner-projects-project-key-delete-postman.md
 x-common:
 - type: x-developer
   url: https://developer.atlassian.com/cloud/bitbucket/
