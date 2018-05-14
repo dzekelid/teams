@@ -1,10 +1,16 @@
 ---
 swagger: "2.0"
 info:
-  title: Bitbucket
-  description: Code against the Bitbucket API to automate simple tasks, embed Bitbucket
-    data into your own site, build mobile or desktop apps, or even add custom UI add-ons
-    into Bitbucket itself using the Connect framework.
+  title: Bitbucket Get Teams Username Members
+  description: |-
+    All members of a team.
+
+    Returns all members of the specified team. Any member of any of the
+    team's groups is considered a member of the team. This includes users
+    in groups that may not actually have access to any of the team's
+    repositories.
+
+    Note that members using the "private profile" feature are not included.
   termsOfService: https://www.atlassian.com/legal/customer-agreement
   contact:
     name: Bitbucket Support
