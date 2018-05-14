@@ -41,24 +41,22 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/user-teams-get.md
-- name: Github Delete Teams Team Members Username
+- name: Github Get Teams Team Members Username
   description: |-
-    The "Remove team member" API is deprecated and is scheduled for removal in the next major version of the API. We recommend using the Remove team membership API instead. It allows you to remove both active and pending memberships.
+    The "Get team member" API is deprecated and is scheduled for removal in the next major version of the API. We recommend using the Get team membership API instead. It allows you to get both active and pending memberships.
 
-    Remove team member.
-    In order to remove a user from a team, the authenticated user must have 'admin'
-    permissions to the team or be an owner of the org that the team is associated
-    with.
-    NOTE This does not delete the user, it just remove them from the team.
+    Get team member.
+    In order to get if a user is a member of a team, the authenticated user mus
+    be a member of the team.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-username-delete.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-username-get.md
   - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-username-delete-postman.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-username-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
