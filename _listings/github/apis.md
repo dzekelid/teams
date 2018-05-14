@@ -41,18 +41,20 @@ apis:
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/user-teams-get.md
-- name: Github Patch Teams Team
+- name: Github Get Teams Team Members
   description: |-
-    Edit team.
-    In order to edit a team, the authenticated user must be an owner of the org
-    that the team is associated with.
+    List team members.
+    In order to list members in a team, the authenticated user must be a member
+    of the team.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/github-logo.png
   humanURL: https://github.com
   baseURL: https://api.github.com//
   tags: Teams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-patch.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-get.md
+  - type: x-postman-collection
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/github/teams-teamid-members-get-postman.md
 x-common:
 - type: x-net-library
   url: https://github.com/octokit/octokit.net
