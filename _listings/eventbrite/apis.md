@@ -1,33 +1,58 @@
 ---
 name: Eventbrite
-description: Eventbrite believes that anyone can be an event organizer. That???s why
-  they offer tools that make it easy to sell tickets to all kinds of events whether
-  it???s a photography class or a sold-out concert, an inspiring conference or an
-  air-guitar competition. With Eventbrite, organizers can create a customizable event
-  page; spread the word with social media; collect money; and gain visibility into
-  attendees and sales. Eventbrite is for anyone planning or attending an event. It
-  empowers event organizers to become more efficient and effective when bringing people
-  together. And people everywhere are searching Eventbrite to discover great events
-  that matter to them.n
-image: https://avatars2.githubusercontent.com/u/369874?v=4
+x-slug: eventbrite
+description: Eventbrite brings people together through live experiences. Discover
+  events that match your passions, or create your own with online ticketing tools.
+image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
 x-kinRank: "9"
-x-alexaRank: ""
-tags:
-- Tickets
-- Ticketing
-- Stack Network
-- Stack
-- Registration
-- Partners
-- My API Stack
-- Events
-- Events
-- API LIfeycle
-created: "2018-05-13"
-modified: "2018-05-13"
+x-alexaRank: "643"
+tags: Teams
+created: "2018-06-20"
+modified: "2018-06-20"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/eventbrite/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Eventbrite Get Events Teams
+  x-api-slug: eventbrite
+  description: Returns a list of attendee-team for the event.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
+  humanURL: http://eventbriteapi.com
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/teams/
+  tags: Events,Teams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/eventbrite/eventsidteams-get-openapi.md
+- name: Eventbrite Get Events Teams
+  x-api-slug: eventbrite
+  description: Returns information for a single attendee-team.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
+  humanURL: http://eventbriteapi.com
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/teams/{id}/
+  tags: Events,Teams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/eventbrite/eventsidteamsid-get-openapi.md
+- name: Eventbrite Get Events Teams Attendees
+  x-api-slug: eventbrite
+  description: Returns attendee for a single attendee-team.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
+  humanURL: http://eventbriteapi.com
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D///events/{id}/teams/{id}/attendees/
+  tags: Events,Teams,Attendees
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/eventbrite/eventsidteamsidattendees-get-openapi.md
+- name: Eventbrite
+  x-api-slug: eventbrite
+  description: Eventbrite brings people together through live experiences. Discover
+    events that match your passions, or create your own with online ticketing tools.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/193-eventbrite.jpg
+  humanURL: http://eventbriteapi.com
+  baseURL: https://www.eventbrite.com//%7Bdata-type%7D/
+  tags: Teams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/eventbrite/openapi.md
 x-common:
 - type: x-apigee-console
   url: https://api.apigee.com/v1/consoles/eventbrite/apidescription?format=internal&ver=1351170233000
@@ -41,6 +66,8 @@ x-common:
   url: http://blog.eventbrite.com/feed/
 - type: x-crunchbase
   url: http://www.crunchbase.com/company/eventbrite
+- type: x-crunchbase
+  url: https://crunchbase.com/organization/eventbrite
 - type: x-developer
   url: https://developer.eventbrite.com/
 - type: x-github
@@ -49,7 +76,7 @@ x-common:
   url: http://help.eventbrite.com/customer/en_us/portal/articles/428604
 - type: x-privacy
   url: http://www.eventbrite.com/privacypolicy
-- type: x-sdksio
+- type: x-sdks-io
   url: https://sdks.io/SDK/View/eventbrite
 - type: x-selfservice-registration
   url: https://www.eventbrite.com/signup/?referrer=%2F%3Fshow_onboarding%3D1&user_type=prebuyer&user_type_sig=AH_ElWGNJ_zHaAxwjzt5jiCRmvPvNBsy6w
@@ -57,8 +84,14 @@ x-common:
   url: http://www.eventbrite.com/tos
 - type: x-twitter
   url: https://twitter.com/EventbriteAPI
+- type: x-twitter
+  url: https://twitter.com/eventbrite
+- type: x-website
+  url: http://eventbriteapi.com
 - type: x-website
   url: http://developer.eventbrite.com/
+- type: x-website
+  url: http://eventbrite.com
 include: []
 maintainers:
 - FN: Kin Lane
