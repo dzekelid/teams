@@ -297,6 +297,236 @@ paths:
       - Team
       - Members
       - Username
+  /teams/{teamId}/memberships/{username}:
+    delete:
+      summary: Delete Teams Team Memberships Username
+      description: |-
+        Remove team membership.
+        In order to remove a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with. NOTE: This does not delete the user, it just removes their membership from the team.
+      operationId: remove-team-membershipin-order-to-remove-a-membership-between-a-user-and-a-team-the-authenticated-us
+      x-api-path-slug: teamsteamidmembershipsusername-delete
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: teamId
+        description: Id of team
+      - in: path
+        name: username
+        description: Name of a member
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Memberships
+      - Username
+    get:
+      summary: Get Teams Team Memberships Username
+      description: |-
+        Get team membership.
+        In order to get a user's membership with a team, the authenticated user must be a member of the team or an owner of the team's organization.
+      operationId: get-team-membershipin-order-to-get-a-users-membership-with-a-team-the-authenticated-user-must-be-a-m
+      x-api-path-slug: teamsteamidmembershipsusername-get
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: teamId
+        description: Id of team
+      - in: path
+        name: username
+        description: Name of a member
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Memberships
+      - Username
+    put:
+      summary: Put Teams Team Memberships Username
+      description: |-
+        Add team membership.
+        In order to add a membership between a user and a team, the authenticated user must have 'admin' permissions to the team or be an owner of the organization that the team is associated with.
+
+        If the user is already a part of the team's organization (meaning they're on at least one other team in the organization), this endpoint will add the user to the team.
+
+        If the user is completely unaffiliated with the team's organization (meaning they're on none of the organization's teams), this endpoint will send an invitation to the user via email. This newly-created membership will be in the 'pending' state until the user accepts the invitation, at which point the membership will transition to the 'active' state and the user will be added as a member of the team.
+      operationId: add-team-membershipin-order-to-add-a-membership-between-a-user-and-a-team-the-authenticated-user-mus
+      x-api-path-slug: teamsteamidmembershipsusername-put
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: teamId
+        description: Id of team
+      - in: path
+        name: username
+        description: Name of a member
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Memberships
+      - Username
+  /teams/{teamId}/repos:
+    get:
+      summary: Get Teams Team Repos
+      description: List team repos
+      operationId: list-team-repos
+      x-api-path-slug: teamsteamidrepos-get
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: teamId
+        description: Id of team
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Repos
+  /teams/{teamId}/repos/{org}/{repo}:
+    put:
+      summary: Put Teams Team Repos Org Repo
+      description: In order to add a repository to a team, the authenticated user
+        must be an owner of the org that the team is associated with. Also, the repository
+        must be owned by the organization, or a direct fork of a repository owned
+        by the organization.
+      operationId: in-order-to-add-a-repository-to-a-team-the-authenticated-user-must-be-an-owner-of-the-org-that-the-t
+      x-api-path-slug: teamsteamidreposorgrepo-put
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: org
+        description: Name of a organization
+      - in: path
+        name: repo
+        description: Name of a repository
+      - in: path
+        name: teamId
+        description: Id of team
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Repos
+      - Org
+      - Repo
+  /teams/{teamId}/repos/{owner}/{repo}:
+    delete:
+      summary: Delete Teams Team Repos Owner Repo
+      description: 'In order to remove a repository from a team, the authenticated
+        user must be an owner of the org that the team is associated with. NOTE: This
+        does not delete the repository, it just removes it from the team.'
+      operationId: in-order-to-remove-a-repository-from-a-team-the-authenticated-user-must-be-an-owner-of-the-org-that-
+      x-api-path-slug: teamsteamidreposownerrepo-delete
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: owner
+        description: Name of a repository owner
+      - in: path
+        name: repo
+        description: Name of a repository
+      - in: path
+        name: teamId
+        description: Id of team
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Repos
+      - Owner
+      - Repo
+    get:
+      summary: Get Teams Team Repos Owner Repo
+      description: Check if a team manages a repository
+      operationId: check-if-a-team-manages-a-repository
+      x-api-path-slug: teamsteamidreposownerrepo-get
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: owner
+        description: Name of a repository owner
+      - in: path
+        name: repo
+        description: Name of a repository
+      - in: path
+        name: teamId
+        description: Id of team
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Repos
+      - Owner
+      - Repo
+  /user/teams:
+    get:
+      summary: Get User Teams
+      description: List all of the teams across all of the organizations to which
+        the authenticated user belongs. This method requires user or repo scope when
+        authenticating via OAuth.
+      operationId: list-all-of-the-teams-across-all-of-the-organizations-to-which-the-authenticated-user-belongs-this-m
+      x-api-path-slug: userteams-get
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - Teams
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

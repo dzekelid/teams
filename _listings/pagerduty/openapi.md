@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: PagerDuty
 x-complete: 1
@@ -90,4 +89,30 @@ paths:
           description: OK
       tags:
       - Teams
----
+  /teams/{id}/escalation_policies/{escalation_policy_id}:
+    delete:
+      summary: Remove an escalation policy from a team
+      description: Delete teams  escalation policies escalation policy
+      operationId: remove-an-escalation-policy-from-a-team
+      x-api-path-slug: teamsidescalation-policiesescalation-policy-id-delete
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Team Escalation Policies
+    put:
+      summary: Add an escalation policy to a team
+      description: Put teams  escalation policies escalation policy
+      operationId: add-an-escalation-policy-to-a-team
+      x-api-path-slug: teamsidescalation-policiesescalation-policy-id-put
+      parameters:
+      - in: query
+        name: No Name
+      responses:
+        200:
+          description: OK
+      tags:
+      - Team Escalation Policies

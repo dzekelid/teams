@@ -7,76 +7,140 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerd
 x-kinRank: "8"
 x-alexaRank: "18918"
 tags: Teams
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/apis.md
 specificationVersion: "0.14"
 apis:
-- name: PagerDuty Create a team
-  x-api-slug: pagerduty
+- name: PagerDuty - Create a team
+  x-api-slug: teams-post
   description: Create a new team.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
   humanURL: http://www.pagerduty.com/
-  baseURL: https://///teams
-  tags: Teams
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teams-post-openapi.md
-- name: PagerDuty List teams
-  x-api-slug: pagerduty
+- name: PagerDuty - List teams
+  x-api-slug: teams-get
   description: List teams of your PagerDuty account, optionally filtered by a search
     query.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
   humanURL: http://www.pagerduty.com/
-  baseURL: https://///teams
-  tags: Teams
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teams-get-openapi.md
-- name: PagerDuty Get a team
-  x-api-slug: pagerduty
+- name: PagerDuty - Get a team
+  x-api-slug: teamsid-get
   description: Get details about an existing team.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
   humanURL: http://www.pagerduty.com/
-  baseURL: https://///teams/{id}
-  tags: Teams
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teamsid-get-openapi.md
-- name: PagerDuty Delete a team
-  x-api-slug: pagerduty
+- name: PagerDuty - Delete a team
+  x-api-slug: teamsid-delete
   description: Remove an existing team.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
   humanURL: http://www.pagerduty.com/
-  baseURL: https://///teams/{id}
-  tags: Teams
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teamsid-delete-openapi.md
-- name: PagerDuty Update a team
-  x-api-slug: pagerduty
+- name: PagerDuty - Update a team
+  x-api-slug: teamsid-put
   description: Update an existing team.
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
   humanURL: http://www.pagerduty.com/
-  baseURL: https://///teams/{id}
-  tags: Teams
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teamsid-put-openapi.md
-- name: PagerDuty
-  x-api-slug: pagerduty
-  description: See how PagerDuty Digital Operations Management Platform integrates
-    machine data & human intelligence to improve visibility & agility across organizations.
+- name: PagerDuty - Remove an escalation policy from a team
+  x-api-slug: teamsidescalation-policiesescalation-policy-id-delete
+  description: Delete teams  escalation policies escalation policy
   image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
   humanURL: http://www.pagerduty.com/
   baseURL: https:///
-  tags: Teams
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
   properties:
   - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/openapi.md
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teamsidescalation-policiesescalation-policy-id-delete-openapi.md
+- name: PagerDuty - Add an escalation policy to a team
+  x-api-slug: teamsidescalation-policiesescalation-policy-id-put
+  description: Put teams  escalation policies escalation policy
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
+  humanURL: http://www.pagerduty.com/
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teamsidescalation-policiesescalation-policy-id-put-openapi.md
+- name: PagerDuty - Remove an escalation policy from a team
+  x-api-slug: teamsidescalation-policiesescalation-policy-id-delete
+  description: Delete teams  escalation policies escalation policy
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
+  humanURL: http://www.pagerduty.com/
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teamsidescalation-policiesescalation-policy-id-delete-openapi.md
+- name: PagerDuty - Add an escalation policy to a team
+  x-api-slug: teamsidescalation-policiesescalation-policy-id-put
+  description: Put teams  escalation policies escalation policy
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
+  humanURL: http://www.pagerduty.com/
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teamsidescalation-policiesescalation-policy-id-put-openapi.md
+- name: PagerDuty - Remove an escalation policy from a team
+  x-api-slug: teamsidescalation-policiesescalation-policy-id-delete
+  description: Delete teams  escalation policies escalation policy
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
+  humanURL: http://www.pagerduty.com/
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teamsidescalation-policiesescalation-policy-id-delete-openapi.md
+- name: PagerDuty - Add an escalation policy to a team
+  x-api-slug: teamsidescalation-policiesescalation-policy-id-put
+  description: Put teams  escalation policies escalation policy
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/632-pagerduty.jpg
+  humanURL: http://www.pagerduty.com/
+  baseURL: https:///
+  tags: Notifications, Incident, Monitoring, Stack Network, SaaS, Technology, Enterprise,
+    Relative Data, Service API, Relative StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/teams/master/_listings/pagerduty/teamsidescalation-policiesescalation-policy-id-put-openapi.md
 x-common:
 - type: x-website
   url: http://www.pagerduty.com/
+- type: x-api-gallery
+  url: http://paccurate.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://pagerduty.stack.network
 - type: x-base
   url: https://acme.pagerduty.com/api/
 - type: x-blog

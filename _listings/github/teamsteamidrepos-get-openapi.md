@@ -403,6 +403,124 @@ paths:
       - Teams
       - Team
       - Repos
+  /teams/{teamId}/repos/{org}/{repo}:
+    put:
+      summary: Put Teams Team Repos Org Repo
+      description: In order to add a repository to a team, the authenticated user
+        must be an owner of the org that the team is associated with. Also, the repository
+        must be owned by the organization, or a direct fork of a repository owned
+        by the organization.
+      operationId: in-order-to-add-a-repository-to-a-team-the-authenticated-user-must-be-an-owner-of-the-org-that-the-t
+      x-api-path-slug: teamsteamidreposorgrepo-put
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: org
+        description: Name of a organization
+      - in: path
+        name: repo
+        description: Name of a repository
+      - in: path
+        name: teamId
+        description: Id of team
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Repos
+      - Org
+      - Repo
+  /teams/{teamId}/repos/{owner}/{repo}:
+    delete:
+      summary: Delete Teams Team Repos Owner Repo
+      description: 'In order to remove a repository from a team, the authenticated
+        user must be an owner of the org that the team is associated with. NOTE: This
+        does not delete the repository, it just removes it from the team.'
+      operationId: in-order-to-remove-a-repository-from-a-team-the-authenticated-user-must-be-an-owner-of-the-org-that-
+      x-api-path-slug: teamsteamidreposownerrepo-delete
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: owner
+        description: Name of a repository owner
+      - in: path
+        name: repo
+        description: Name of a repository
+      - in: path
+        name: teamId
+        description: Id of team
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Repos
+      - Owner
+      - Repo
+    get:
+      summary: Get Teams Team Repos Owner Repo
+      description: Check if a team manages a repository
+      operationId: check-if-a-team-manages-a-repository
+      x-api-path-slug: teamsteamidreposownerrepo-get
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      - in: path
+        name: owner
+        description: Name of a repository owner
+      - in: path
+        name: repo
+        description: Name of a repository
+      - in: path
+        name: teamId
+        description: Id of team
+      responses:
+        200:
+          description: OK
+      tags:
+      - Teams
+      - Team
+      - Repos
+      - Owner
+      - Repo
+  /user/teams:
+    get:
+      summary: Get User Teams
+      description: List all of the teams across all of the organizations to which
+        the authenticated user belongs. This method requires user or repo scope when
+        authenticating via OAuth.
+      operationId: list-all-of-the-teams-across-all-of-the-organizations-to-which-the-authenticated-user-belongs-this-m
+      x-api-path-slug: userteams-get
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - Teams
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

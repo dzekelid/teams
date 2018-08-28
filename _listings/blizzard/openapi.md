@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Blizzard
 x-complete: 1
@@ -39,4 +38,3 @@ paths:
       - Realm
       - TeamSize
       - TeamName
----

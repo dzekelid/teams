@@ -500,6 +500,27 @@ paths:
       - Repos
       - Owner
       - Repo
+  /user/teams:
+    get:
+      summary: Get User Teams
+      description: List all of the teams across all of the organizations to which
+        the authenticated user belongs. This method requires user or repo scope when
+        authenticating via OAuth.
+      operationId: list-all-of-the-teams-across-all-of-the-organizations-to-which-the-authenticated-user-belongs-this-m
+      x-api-path-slug: userteams-get
+      parameters:
+      - in: header
+        name: Accept
+        description: Is used to set specified media type
+      - in: query
+        name: access_token
+        description: Your Github OAuth token
+      responses:
+        200:
+          description: OK
+      tags:
+      - User
+      - Teams
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0
